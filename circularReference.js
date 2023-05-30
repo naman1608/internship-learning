@@ -17,4 +17,5 @@ room.place = meetup;
 meetup.time = time;
 time.venue = room;
 
-console.log(JSON.stringify(meetup));
+console.log(2+"2");
+console.log(Boolean(0))
