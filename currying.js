@@ -32,11 +32,11 @@ const infiniteCurry = function (...args) {
   );
   console.log(currentSum);
   const curried = (...furtherArgs) => {
-    if (curriedArgs.length === 0) return currentSum;
+    if (furtherArgs.length === 0) return currentSum;
     return infiniteCurry(...furtherArgs, currentSum);
   };
   return curried;
 };
 
-console.log(infiniteCurry(2)(3)());
+console.log(infiniteCurry(2)(3)()); // possible without the last no argument call?
 console.log(infiniteCurry(2, 3, 4, 5)(10)(15)());
