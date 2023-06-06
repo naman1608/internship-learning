@@ -14,7 +14,6 @@ setTimeout(
     Promise.resolve()
       .then(() => console.log("resolved6"))
       .then(() => console.log("resolved7")),
-  0
 );
 
 console.log("abc");
